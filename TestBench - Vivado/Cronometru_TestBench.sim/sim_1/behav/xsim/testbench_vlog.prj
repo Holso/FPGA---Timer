@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Cronometru_TestBench.srcs/sources_1/new/Clock_Main.v" \
+"../../../../Cronometru_TestBench.srcs/sources_1/new/binary2BCD.v" \
+"../../../../Cronometru_TestBench.srcs/sources_1/new/display_seven_seg.v" \
+"../../../../Cronometru_TestBench.srcs/sources_1/new/display_seven_seg_dot.v" \
+"../../../../Cronometru_TestBench.srcs/sources_1/new/time_manager.v" \
+"../../../../Cronometru_TestBench.srcs/sim_1/new/testbench.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
